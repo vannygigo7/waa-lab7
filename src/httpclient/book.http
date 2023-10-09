@@ -1,0 +1,33 @@
+GET http://localhost:8080/books
+Authorization: Basic user 123456
+
+###
+GET http://localhost:8080/books/1
+Authorization: Basic user 123456
+
+###
+POST http://localhost:8080/books
+Authorization: Basic admin 123456
+content-type:application/json
+
+{
+  "title": "Book 7",
+  "isbn": "2222-2222",
+  "price": 20
+}
+
+###
+PUT http://localhost:8080/books/7
+Authorization: Basic admin 123456
+content-type:application/json
+
+{
+  "id": 7,
+  "title": "Book 7",
+  "isbn": "3333-3333",
+  "price": 70
+}
+
+###
+DELETE http://localhost:8080/books/6
+Authorization: Basic admin 123456
