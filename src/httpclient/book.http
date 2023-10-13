@@ -1,5 +1,5 @@
 GET http://localhost:8080/books
-Authorization: Basic test1@miu.edu 123456
+Authorization: Basic test2@miu.edu 123456
 
 ###
 GET http://localhost:8080/books/1
