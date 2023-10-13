@@ -1,2 +1,19 @@
+GET http://localhost:8080/auth/login
+
 ###
 POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "email": "test1@miu.edu",
+  "password": "123456",
+  "roles": [
+    {
+      "id": 1,
+      "name": "ADMIN"
+    }
+  ]
+}
+
+###
+GET http://localhost:8080/users

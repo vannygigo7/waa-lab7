@@ -1,13 +1,13 @@
 GET http://localhost:8080/books
-Authorization: Basic user 123456
+Authorization: Basic test1@miu.edu 123456
 
 ###
 GET http://localhost:8080/books/1
-Authorization: Basic user 123456
+Authorization: Basic admin 123456
 
 ###
 POST http://localhost:8080/books
-Authorization: Basic admin 123456
+Authorization: Basic user 123456
 content-type:application/json
 
 {
