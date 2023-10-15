@@ -1,9 +1,9 @@
 GET http://localhost:8080/books
-Authorization: Basic test2@miu.edu 123456
+Authorization: Basic test1@miu.edu 123456
 
 ###
-GET http://localhost:8080/books/1
-Authorization: Basic admin 123456
+GET http://localhost:8080/books/5
+Authorization: Basic test1@miu.edu 123456
 
 ###
 POST http://localhost:8080/books
@@ -18,13 +18,13 @@ content-type:application/json
 
 ###
 PUT http://localhost:8080/books/7
-Authorization: Basic admin 123456
+Authorization: Basic test1@miu.edu 123456
 content-type:application/json
 
 {
   "id": 7,
   "title": "Book 7",
-  "isbn": "3333-3333",
+  "isbn": "7777-7777",
   "price": 70
 }
 

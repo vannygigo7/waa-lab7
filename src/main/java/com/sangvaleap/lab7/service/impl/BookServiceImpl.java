@@ -31,7 +31,7 @@ public class BookServiceImpl implements BookService {
         return bookRepository.save(book);
     }
 
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasAuthority('ADMIN')")
     @Override
     public Book updateBook(Long id, Book book) throws Exception{
         if(bookRepository.existsById(id)) {
@@ -49,6 +49,5 @@ public class BookServiceImpl implements BookService {
         }else{
             throw new Exception("Book is not found.");
         }
-
     }
 }
